@@ -38,6 +38,15 @@
   }
 })();
 
+// Typeform submit → Meta Pixel Lead event (kein paid Plan nötig)
+window.addEventListener('message', function (event) {
+  if (event.data && event.data.type === 'form-submit') {
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'Lead');
+    }
+  }
+});
+
 // Evergreen 12-hour countdown ("Bewerberschluss"), resets per new visitor session
 (function () {
   const DURATION = 12 * 60 * 60 * 1000;
