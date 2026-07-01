@@ -1,3 +1,80 @@
+/* ---------- Cookie Banner ---------- */
+
+.cookie-banner {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: var(--card-bg-1);
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 560px;
+  width: calc(100% - 48px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cookie-banner.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(12px);
+}
+
+.cookie-banner p {
+  font-size: 13px;
+  color: var(--gray);
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+}
+
+.cookie-note {
+  color: var(--gray-soft);
+}
+
+.cookie-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.btn-cookie-accept {
+  padding: 8px 16px;
+  background: var(--gold-2);
+  color: #08080a;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-cookie-decline {
+  padding: 8px 14px;
+  background: transparent;
+  color: var(--gray);
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+@media (max-width: 540px) {
+  .cookie-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    bottom: 16px;
+  }
+}
+
 /* ---------- Countdown bar ---------- */
 
 .countdown-bar {
@@ -75,6 +152,7 @@
 .webinar-title {
   margin-top: 22px;
   font-size: clamp(28px, 4.2vw, 46px);
+  text-transform: capitalize;
 }
 
 /* ---------- Video ---------- */
@@ -160,11 +238,6 @@
   padding: 11px 24px;
   font-size: 13px;
   margin-top: 0;
-}
-
-.cta-subtext {
-  margin-top: 10px;
-  font-size: 13px;
 }
 
 /* ---------- Social proof ---------- */
@@ -343,7 +416,7 @@ html.js .faq-item.is-visible {
   color: var(--gray);
   font-size: 16px;
   line-height: 1.7;
-  text-align: left;
+  text-align: center;
 }
 
 .offer-grid {
@@ -538,12 +611,32 @@ html.js .faq-item.is-visible {
   overflow: hidden;
 }
 
+.testimonial-title {
+  font-size: 16px;
+  color: var(--white);
+  margin-bottom: 14px;
+}
+
 .media-embed {
   position: relative;
   aspect-ratio: 16 / 9;
   border-radius: 12px;
   overflow: hidden;
   background: #000;
+}
+
+.audio-cover {
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.audio-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .media-embed.portrait {

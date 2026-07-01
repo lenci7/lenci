@@ -8,13 +8,13 @@
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <meta property="og:title" content="LENCI | Jetzt Bewerben">
 <meta property="og:description" content="1:1 Coaching mit LENCI. Vom Türsteher zum Mitaufbau einer 36-Millionen-Euro Brand. Nur 3 Plätze pro Monat.">
-<meta property="og:image" content="media/hero/poster.jpg">
+<meta property="og:image" content="media/hero/poster.jpg?v=2">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/webinar.css">
+<link rel="stylesheet" href="css/webinar.css?v=2">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body class="webinar-page">
@@ -22,6 +22,15 @@
   <div id="particles-js"></div>
   <div class="grid-overlay"></div>
   <div class="glow"></div>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <p>Wir nutzen den Meta Pixel zur Optimierung unserer Werbung. <span class="cookie-note">Keine Weitergabe an Dritte.</span></p>
+    <div class="cookie-actions">
+      <button id="cookieAccept" class="btn-cookie-accept">Akzeptieren</button>
+      <button id="cookieDecline" class="btn-cookie-decline">Ablehnen</button>
+    </div>
+  </div>
 
   <div class="countdown-bar">
     <span>Bewerberschluss in</span>
@@ -40,14 +49,14 @@
 
       <span class="live-badge"><span class="live-dot"></span> Bewerbung jetzt geöffnet &middot; Nur 3 Plätze pro Monat</span>
 
-      <h1 class="hero-title webinar-title">Vom Türsteher Für 10&euro; Die Stunde Zum<br>Mitaufbau Einer 36-Millionen-Euro Brand</h1>
+      <h1 class="hero-title webinar-title">Wie ich als normaler Junge aus meinem Kinderzimmer zum <span class="name-highlight">Umsatzmillionär</span> wurde</h1>
 
-      <p class="hero-desc">Schau dir das Video an und erfahre, wie du mit 1:1 Coaching von mir deine eigene Brand aufbaust — <em class="gold-em">unabhängig von deinem Startpunkt</em></p>
+      <p class="hero-desc">Ich zeige dir genau, wie ich meine erste Millionen-Brand aufgebaut habe — und wie du das genauso schaffen kannst. <em class="gold-em">Unabhängig von deinem Startpunkt.</em></p>
 
       <div class="video-wrap">
         <div class="video-box" id="videoBox">
-          <video id="heroVideo" poster="media/hero/poster.jpg" preload="none" playsinline>
-            <source src="media/hero/hero.mp4" type="video/mp4">
+          <video id="heroVideo" poster="media/hero/poster.jpg?v=2" preload="none" playsinline>
+            <source src="media/hero/hero.mp4?v=3" type="video/mp4">
           </video>
           <div class="video-overlay" id="videoOverlay">
             <button class="play-btn" id="playBtn" aria-label="Video abspielen">
@@ -58,7 +67,6 @@
       </div>
 
       <a href="#bewerben" class="cta-btn">Jetzt Bewerben</a>
-      <p class="cta-subtext">Nur 3 Plätze pro Monat &middot; Bewerbung wird geprüft</p>
 
       <div class="social-proof">
         <span>Klienten aus dem Coaching haben bereits <strong class="gold-em">sechs- &amp; siebenstellige</strong> Umsätze erzielt</span>
@@ -98,6 +106,7 @@
   </section>
 
   <div class="social-proof standalone">
+    <a href="#bewerben" class="cta-btn small">Jetzt Bewerben</a>
     <span>Klienten aus dem Coaching haben bereits <strong class="gold-em">sechs- &amp; siebenstellige</strong> Umsätze erzielt</span>
   </div>
 
@@ -130,7 +139,7 @@
   <section class="section offer-section">
     <div class="section-inner narrow">
       <span class="pill-badge">Die Lösung</span>
-      <h2 class="section-title">Eine Zusammenarbeit. Kein Kurs.</h2>
+      <h2 class="section-title">Eine risikofreie Zusammenarbeit. Kein 0815 Kurs.</h2>
       <p>Persönlich, strukturiert, auf ein Ziel ausgerichtet: deine eigene Brand. Mit einem konkreten Umsatzziel, das vertraglich festgehalten wird — inklusive Erstattungsregelung, falls wir es nicht erreichen.</p>
     </div>
 
@@ -168,7 +177,7 @@
       </div>
 
       <div class="section-cta">
-        <p class="section-cta-line">Wenn du das hier liest und nickst: Bewirb dich. Drei Plätze pro Monat. Kein automatischer Zugang.</p>
+        <p class="section-cta-line">Wenn diese Aussagen auf dich zutreffen, steht dir nichts im Weg zu deiner ersten Brand — und du weißt genau, was du als Nächstes tun musst.</p>
         <a href="#bewerben" class="cta-btn">Jetzt Bewerben</a>
       </div>
     </div>
@@ -184,10 +193,12 @@
           <div class="me-photo me-photo-right"><img loading="lazy" src="media/me/foto-links.jpg" alt=""></div>
         </div>
         <div class="me-content">
-          <span class="pill-badge">Lerne Mich Kennen</span>
+          <span class="pill-badge">Dein Coach</span>
           <h2 class="section-title left">Ich Bin Leo — Bekannt Als <span class="name-highlight">LENCI</span></h2>
-          <p>Bevor es das hier gab, stand ich nachtweise als Türsteher auf der Tür — zwölf Stunden am Stück, zehn Euro die Stunde. Keine große Vision, nur eine klare Entscheidung: So bleibt es nicht.</p>
-          <p>Mit achtzehn mein erster Schritt in den Ecommerce. Ohne Kapital, ohne Netz — nur mit dem Willen, es durchzuziehen. Was folgte: der Mitaufbau einer der erfolgreichsten Gym- und Lifestyle-Brands im deutschsprachigen Raum. Über 36 Millionen Euro Gesamtumsatz, Millionenbudgets, Deals mit den größten Influencern der DACH-Region — verhandelt und umgesetzt von mir selbst.</p>
+          <p>Im Video solltest du schon grob einiges über mich erfahren haben — der Aufbau einer Millionen-Brand, ein Absturz durch einen Influencer-Vertrag, und das Ganze stand nach nur 90 Tagen wieder auf den Beinen.</p>
+          <p>Warum? Weil ich mir über die letzten 4 Jahre einen Skill angeeignet habe, den nur wenige beherrschen: zu verstehen, wie man mit einem simplen Onlineshop und dem richtigen Marketing wortwörtlich alles verkaufen kann.</p>
+          <p>Heute stehe ich an dem Punkt in meinem Leben, den ich mir als Siebzehnjähriger kaum erträumen konnte. Ich manage zwei aktive Brands, verwalte Hunderttausende von Euros in Werbebudget und habe Kontakte, von denen die meisten nur träumen können.</p>
+          <p>Der Vorteil: Ich kann arbeiten, von wo ich will, wann ich will und wie ich will. Ein Nachteil hat das Ganze allerdings — ich hätte mir gewünscht, dass es schneller geht. Genau deswegen bin ich heute hier: um dir die Möglichkeit zu geben, in deinen jungen Jahren das zu erreichen, was ich erreicht habe — nur noch schneller.</p>
         </div>
       </div>
 
@@ -198,11 +209,11 @@
         </article>
         <article class="ticket-card">
           <h3>Ist Das Coaching Was Für Dich?</h3>
-          <p>Ob du bei null startest oder bereits einen Shop hast: Dropshipping-Einstieg, Brand-Aufbau, Influencer-Marketing und Skalierung mit System. Klienten erzielen bereits sechs- und siebenstellige Umsätze.</p>
+          <p>Ob du bei null anfängst oder schon einen Shop hast — wenn du weißt, dass mehr möglich ist, und endlich jemanden an deiner Seite willst, der das wirklich schon gelebt hat, dann ja.</p>
         </article>
         <article class="ticket-card">
           <h3>Deine Chance</h3>
-          <p>Nur 3 Plätze pro Monat — deine Chance, einer von ihnen zu sein und am Ende selbst solche Ergebnisse zu erzielen. Bewerbungen prüfe ich persönlich.</p>
+          <p>Bewerbungen werden von meinem Team geprüft, bevor du mit mir persönlich arbeitest. Nur wer wirklich bereit ist, kommt rein.</p>
         </article>
       </div>
 
@@ -222,6 +233,7 @@
 
         <!-- YouTube Interview: Ben L. -->
         <article class="testimonial-card testimonial-video">
+          <h3 class="testimonial-title">🚀 Umsatzziel in unter 60 Tagen</h3>
           <div class="media-embed">
             <iframe src="https://www.youtube.com/embed/42YlTqNAZgc" title="Interview mit Ben L." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
@@ -230,16 +242,17 @@
             <strong>Ben L.</strong>
           </div>
           <div class="testimonial-fields">
-            <div class="field"><span class="field-label">Ausgangssituation</span><p class="placeholder-text">[Text folgt]</p></div>
-            <div class="field"><span class="field-label">Lösung</span><p class="placeholder-text">[Text folgt]</p></div>
-            <div class="field"><span class="field-label">Ergebnis</span><p>Umsatzziel in unter 60 Tagen erreicht — 25.000€ Gesamtumsatz, davon einen Thailand-Urlaub mit seiner Freundin finanziert.</p></div>
+            <div class="field"><span class="field-label">Ausgangssituation</span><p>Ben kam als Schüler mit 300 € zu mir — kein Puffer, kein Plan B. Er hat mir sein letztes Geld anvertraut und gesagt: Ich vertraue dir. Das ist nicht selbstverständlich — und genau das hat mich angespornt, alles rauszuholen.</p></div>
+            <div class="field"><span class="field-label">Lösung</span><p>Ein Monat intensive Zusammenarbeit: wöchentliche Calls, zuerst TikTok für schnelle erste Umsätze, dann Meta. Nach 30 Tagen Mentoring gab ich ihm zusätzlich 30 Tage WhatsApp-Support — damit er nicht alleine dasteht und das Ganze nicht in den Sand setzt.</p></div>
+            <div class="field"><span class="field-label">Ergebnis</span><p>In 55 Tagen knackte Ben das vertraglich vereinbarte Umsatzziel von 10.000 €. Heute: knapp 25.000 € Gesamtumsatz in unter 90 Tagen — und davon sich und seiner Freundin 6 Wochen Thailand finanziert. Als Schüler. Mit 300 €.</p></div>
           </div>
         </article>
 
         <!-- MP4 Kundenbewertung: Isi N. -->
         <article class="testimonial-card testimonial-video">
+          <h3 class="testimonial-title">💻 Coachingerfahrung nach 3 Monaten</h3>
           <div class="media-embed portrait">
-            <video controls playsinline preload="none" poster="media/testimonials/poster.jpg">
+            <video controls playsinline preload="none" poster="media/testimonials/mp4-cover.jpg">
               <source src="media/testimonials/kunden-review.mp4?v=2" type="video/mp4">
             </video>
           </div>
@@ -248,28 +261,32 @@
             <strong>Isi N.</strong>
           </div>
           <div class="testimonial-fields">
-            <div class="field"><span class="field-label">Ausgangssituation</span><p class="placeholder-text">[Text folgt]</p></div>
-            <div class="field"><span class="field-label">Lösung</span><p class="placeholder-text">[Text folgt]</p></div>
-            <div class="field"><span class="field-label">Ergebnis</span><p>30.000€ Gesamtumsatz in 90 Tagen, 12.000€ Marge.</p></div>
+            <div class="field"><span class="field-label">Ausgangssituation</span><p>Isi kam mit einem klaren Ziel: alles wirklich verstehen. TikTok, Meta, KI-Content, AI-Models — komplett von null. Kein halbes Wissen, kein Überfliegen. Er war bereit, drei Monate lang alles zu geben.</p></div>
+            <div class="field"><span class="field-label">Lösung</span><p>Drei Monate intensive Zusammenarbeit — Calls wann immer nötig, egal ob nachts oder früh morgens. Kein fester Rahmen, echter Support. Dazu ein Modul, das kaum jemand anbietet: KI-gestützter Content mit AI-Models, der direkt als Werbeanzeige läuft.</p></div>
+            <div class="field"><span class="field-label">Ergebnis</span><p>30.000 € Gesamtumsatz in 90 Tagen bei 5-stelligem Profit — vertraglich vereinbart und eingehalten. Isi sagt selbst: Er hat sich durch diese drei Monate Jahre an Lehrgeld und Zeit gespart.</p></div>
           </div>
         </article>
 
-        <!-- MP3 Sprachmemo: Tim B. -->
+        <!-- Sprachmemo: Antony B. -->
         <article class="testimonial-card testimonial-audio">
+          <h3 class="testimonial-title">💸 78.000€ Umsatz im ersten Monat</h3>
+          <div class="audio-cover">
+            <img loading="lazy" src="media/testimonials/memo-cover.jpg?v=3" alt="">
+          </div>
           <div class="audio-embed">
             <span class="audio-icon">&#127908;</span>
             <audio controls>
-              <source src="media/testimonials/memo.m4a" type="audio/mp4">
+              <source src="media/testimonials/memo.m4a?v=3" type="audio/mp4">
             </audio>
           </div>
           <div class="testimonial-author">
             <span class="avatar"></span>
-            <strong>Tim B.</strong>
+            <strong>Antony B.</strong>
           </div>
           <div class="testimonial-fields">
-            <div class="field"><span class="field-label">Ausgangssituation</span><p class="placeholder-text">[Text folgt]</p></div>
-            <div class="field"><span class="field-label">Lösung</span><p class="placeholder-text">[Text folgt]</p></div>
-            <div class="field"><span class="field-label">Ergebnis</span><p class="placeholder-text">[Erster Eindruck nach den ersten Wochen — Text folgt]</p></div>
+            <div class="field"><span class="field-label">Ausgangssituation</span><p>Antony kam als kompletter Anfänger mit 500 € Budget — aber mit knapp 50.000 organischen TikTok-Followern und dem unbedingten Willen, es durchzuziehen. Gemeinsames Ziel: 25.000 € Umsatz in den ersten drei Monaten.</p></div>
+            <div class="field"><span class="field-label">Lösung</span><p>Das Ziel haben wir in den ersten Tagen geknackt. Strategie: organisches TikTok kombiniert mit gezieltem Influencer-Marketing — Kontakte, die ich direkt mitgegeben habe. Als klar wurde, was in ihm steckt, haben wir die Calls erhöht und weiter skaliert. Er hat alles umgesetzt — ohne Ausnahme.</p></div>
+            <div class="field"><span class="field-label">Ergebnis</span><p>78.000 € Gesamtumsatz im ersten Monat. Nach 90 Tagen: mittlerer sechsstelliger Gesamtumsatz. Die Zusammenarbeit läuft bis heute — nicht weil sie muss, sondern weil er durchzieht.</p></div>
           </div>
         </article>
 

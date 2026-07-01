@@ -1,3 +1,43 @@
+// Meta Pixel — lädt nur nach Cookie-Zustimmung (DSGVO)
+(function () {
+  const CONSENT_KEY = 'lenci_cookie_consent';
+  const banner = document.getElementById('cookie-banner');
+
+  function loadPixel() {
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
+      if (!f._fbq) f._fbq = n;
+      n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '994154660153232');
+    fbq('track', 'PageView');
+  }
+
+  function hideBanner() {
+    if (banner) banner.classList.add('is-hidden');
+  }
+
+  const stored = localStorage.getItem(CONSENT_KEY);
+  if (stored === 'accepted') { loadPixel(); hideBanner(); }
+  else if (stored === 'declined') { hideBanner(); }
+
+  if (banner) {
+    document.getElementById('cookieAccept').addEventListener('click', function () {
+      localStorage.setItem(CONSENT_KEY, 'accepted');
+      loadPixel();
+      hideBanner();
+    });
+    document.getElementById('cookieDecline').addEventListener('click', function () {
+      localStorage.setItem(CONSENT_KEY, 'declined');
+      hideBanner();
+    });
+  }
+})();
+
 // Evergreen 12-hour countdown ("Bewerberschluss"), resets per new visitor session
 (function () {
   const DURATION = 12 * 60 * 60 * 1000;
