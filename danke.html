@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bewerbung erhalten – LENCI</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .danke-wrap {
+    position: relative;
+    z-index: 5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 48px 24px;
+  }
+  .danke-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: rgba(74, 222, 128, 0.1);
+    border: 1px solid rgba(74, 222, 128, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 32px;
+    font-size: 32px;
+  }
+  .danke-title {
+    font-family: 'Supreme', 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(28px, 4vw, 44px);
+    line-height: 1.15;
+    color: #f6f6f7;
+    margin-bottom: 16px;
+  }
+  .danke-sub {
+    max-width: 480px;
+    color: #97979f;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 auto 40px;
+  }
+  .danke-gold {
+    color: #d9a95c;
+  }
+  .danke-back {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 1px solid rgba(217,169,92,0.3);
+    border-radius: 999px;
+    color: #f3d8a4;
+    font-size: 14px;
+    text-decoration: none;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .danke-back:hover {
+    border-color: rgba(217,169,92,0.6);
+    background: rgba(217,169,92,0.06);
+  }
+</style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div class="grid-overlay"></div>
+  <div class="glow"></div>
+
+  <div class="danke-wrap">
+    <div class="danke-icon">✓</div>
+    <h1 class="danke-title">Bewerbung erhalten.</h1>
+    <p class="danke-sub">Mein Team meldet sich bei dir — <span class="danke-gold">nur ernsthafte Bewerber kommen rein.</span> Halte dein Handy bereit.</p>
+    <a href="/webinar.html" class="danke-back">← Zurück zur Seite</a>
+  </div>
+
+  <script src="js/particles.min.js"></script>
+  <script>
+    particlesJS('particles-js',{"particles":{"number":{"value":55,"density":{"enable":true,"value_area":900}},"color":{"value":"#d9a95c"},"shape":{"type":"circle"},"opacity":{"value":0.18,"random":true},"size":{"value":2,"random":true},"line_linked":{"enable":true,"distance":140,"color":"#d9a95c","opacity":0.07,"width":1},"move":{"enable":true,"speed":0.6}},"interactivity":{"events":{"onhover":{"enable":false}}},"retina_detect":true});
+  </script>
+</body>
+</html>

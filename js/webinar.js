@@ -38,12 +38,15 @@
   }
 })();
 
-// Typeform submit → Meta Pixel Lead event (kein paid Plan nötig)
+// Typeform submit → Pixel feuern + Weiterleitung zu /danke.html
 window.addEventListener('message', function (event) {
   if (event.data && event.data.type === 'form-submit') {
     if (typeof fbq !== 'undefined') {
       fbq('track', 'Lead');
     }
+    setTimeout(function () {
+      window.location.href = '/danke.html';
+    }, 500);
   }
 });
 
